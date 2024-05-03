@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoP6App.Views.UserSingUp"
+             Title="User SingUp">
+    <VerticalStackLayout Padding="20" Background="LightBlue">
+
+        <Entry x:Name="TxtUsername" Placeholder="Usuario" Margin="0,5,0,5" FontSize="20" PlaceholderColor="Black">
+
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Trigger>
+            </Entry.Triggers>
+
+            </Entry>
+
+        <Entry x:Name="TxtNombre" Placeholder="Nombre" Margin="0,5,0,5" FontSize="20" PlaceholderColor="Black"/>
+        <Entry x:Name="TxtApellidos" Placeholder="Apellido" Margin="0,5,0,5" FontSize="20" PlaceholderColor="Black"/>
+     
+
+        <Entry x:Name="TxtPassword" Placeholder="Contraseña" Margin="0,5,0,5" FontSize="20" PlaceholderColor="Black" />
+
+        <Picker x:Name="CboxUsuarioRolId" Title="Select a User Role" ItemDisplayBinding="{Binding UserRoleDescription}" TitleColor="black"/>
+        
+        <StackLayout Orientation="Horizontal">
+
+            <Button x:Name="BtnAdd" Text="ADD" Margin="0,20,5,5" FontSize="25" BackgroundColor="Green"  />
+            
+            <Button x:Name="BtnCancel" Text="CANCEL" Margin="5,20,0,5" FontSize="25" Clicked="BtnCancel_Clicked" BackgroundColor="Firebrick"/>
+
+        </StackLayout>
+
+        
+        
+
+
+    </VerticalStackLayout>
+</ContentPage>

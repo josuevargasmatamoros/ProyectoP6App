@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoP6App.Views.OptionPage"
+             Title="OptionPage"
+             Background="LightBlue">
+    <VerticalStackLayout>
+        <Label Text="Centro medico" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="30"/>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Citas" Text="Citas" Grid.Row="0" Grid.Column="0" Margin="10" HeightRequest="150" WidthRequest="170" BackgroundColor="DarkBlue" TextColor="Black" FontSize="30" Clicked="BtnCitas"/>
+
+            <Button x:Name="Doctores" Text="Doctores" Grid.Row="0" Grid.Column="1" Margin="10"  HeightRequest="150" WidthRequest="170" BackgroundColor="DarkBlue" TextColor="Black"  FontSize="30" Clicked="BtnDoctores"/>
+
+            <Button x:Name="Historiales" Text="Historiales" Grid.Row="1" Grid.Column="0" Margin="10"  HeightRequest="150" WidthRequest="170" BackgroundColor="DarkBlue" TextColor="Black"  FontSize="29" Clicked="BtnHistoriales"/>
+
+            <Button x:Name="Pacientes" Text="Pacientes" Grid.Row="1" Grid.Column="1" Margin="10"  HeightRequest="150" WidthRequest="170" BackgroundColor="DarkBlue" TextColor="Black" FontSize="29" Clicked="BtnPacientes"/>
+
+            <Button x:Name="SistemaDeCitas" Text="Agendar" Grid.Row="2" Grid.Column="0" Margin="10"  HeightRequest="150" WidthRequest="170" BackgroundColor="BlueViolet" TextColor="Black" FontSize="29" Clicked="BtnSistemaDeCitas"/>
+
+            <Button x:Name="Salir" Text="Salir" Grid.Row="2" Grid.Column="1" Margin="10"  HeightRequest="150" WidthRequest="170" BackgroundColor="Maroon" TextColor="Black" FontSize="20" Clicked="BtnSalir" />
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

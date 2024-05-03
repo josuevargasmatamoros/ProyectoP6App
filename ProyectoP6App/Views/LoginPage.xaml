@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoP6App.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             Background="LightBlue"
+             
+             
+             >
+    <VerticalStackLayout VerticalOptions="Center" Padding="20,0,20,0"  >
+
+        <Entry x:Name="TxtEmail" Placeholder="Usuario..." FontSize="23" Keyboard="Email" TextColor="Black" PlaceholderColor="Black"/>
+
+        <Entry x:Name="TxtPassword" Placeholder="Contraseña..." FontSize="23" Keyboard="Text" IsPassword="True" PlaceholderColor="Black" />
+
+        <Switch x:Name="SwVerPassword" IsToggled="False" Toggled="SwVerPassword_Toggled"/>
+
+        <Button  x:Name="BtnIngresar" Text="LOGIN" FontSize="20" BackgroundColor="Green" TextColor="White" Clicked="BtnIngresar_Clicked" Margin="0,5,0,15" />
+
+        <Button x:Name="BtnSingUp" Text="SING UP" FontSize="20" Clicked="BtnSingUp_Clicked" BackgroundColor="Green" />
+
+        <Label x:Name="LblPasswordRecovery" Text="Olvide mi contraseña..." HorizontalTextAlignment="End" FontSize="19" Margin="0,30,0,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+
+            </Label.GestureRecognizers>
+                
+
+        </Label>
+
+
+    </VerticalStackLayout>
+</ContentPage>
